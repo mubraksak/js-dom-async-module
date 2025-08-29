@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#todo-list li {
+  background: #fff;
+  color: gray;               /* Default color */
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+#todo-list li.completed {
+  color: green;             /* Completed color */
+  font-weight: bold;
+}
+
+.tick {
+  display: none;            /* Hidden by default */
+  font-size: 1.2rem;
+  color: green;
+}
+
+li.completed .tick {
+  display: inline;          /* Show when completed */
+}
